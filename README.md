@@ -4,7 +4,10 @@
 demonstrate the mysterious failure to serve tbi of my flask/cors/byte-range
 webserver on trena.systemsbiology.net
 
-## depends on a simple local webserver: file://xxx.html urls do not support CORS
+### depends on running a simple local webserver
+
+file://xxx.html urls do not support CORS, so each of the demos is
+loaded into a simple python webserver:  *make server*
 
 - **bed-tbi-broad.html**:  tbi works, loads quickly since byte ranges are employed
 - **bed-tbi-trena.html**:  same files as at the broad, but tbi fails to load.  with tbi line
